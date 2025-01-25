@@ -22,14 +22,14 @@ export default {
 
 
 <template>
+  <div class="background-image"></div>
   <div class="background-container">
-    <div class="background-image"></div>
     <div class="content">
       <h1>De mí, pa' tí, con amol</h1>
       <p class="text">Hola ;), yo soy el mejor stalker que tiene el grupo 31. Vengo a decirte que gracias a tus
         conocimientos,
-        dedicación y pasciencia, aprendí a dar mis primeros pasos en PW. Cada manera de retarnos, de hacer que nos
-        esforzáramos más cada día llevó a cada uno de nosotros a donde está hoy por hoy. Y por te quiero dar las
+        dedicación y paciencia, aprendí a dar mis primeros pasos en PW. Cada manera de retarnos, de hacer que nos
+        esforzáramos más cada día llevó a cada uno de nosotros a donde está hoy por hoy. Y pues te quiero dar las
         gracias,
         gracias por ser como eres, por ser diferente, por romper la barrera de lo tradicional y por compartir las MIELES
         con nosotros.
@@ -42,8 +42,9 @@ export default {
         </el-carousel-item>
       </el-carousel>
     </div>
-    <NextPrevComponent />
   </div>
+  <NextPrevComponent />
+  
   
 </template>
 
@@ -65,13 +66,13 @@ export default {
 }
 
 .background-container {
-  position: fixed;
+  /* position: relative; */
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  z-index: -1;
+  height: 100%;
+  width: 100%;
+  /* overflow: hidden; */
+  z-index: 2;
 }
 
 .background-image {
@@ -82,7 +83,7 @@ export default {
   width: 100%;
   filter: brightness(20%);
   /* Aplica el filtro oscuro solo a la imagen de fondo */
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
@@ -109,9 +110,9 @@ export default {
   margin-bottom: 100px;
   font-size: 2em;
   text-align: center;
-  position: relative;
+  /* position: relative; */
   /* Asegura que el contenido se posicione correctamente */
-  z-index: 1;
+  /* z-index: 2; */
   /* Asegura que el contenido esté por encima de la imagen de fondo */
 }
 </style>

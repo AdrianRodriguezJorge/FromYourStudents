@@ -76,6 +76,7 @@ footer .next {
     align-items: center;
     margin-right: 100px;
     margin-bottom: 50px;
+    margin-left: 5px;
 }
 
 footer .next:hover,
