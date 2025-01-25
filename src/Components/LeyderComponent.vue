@@ -1,16 +1,20 @@
 <script>
+import NextPrevComponent from './NextPrevComponent.vue';
 export default {
   data() {
     return {
       images: [
-        '//src/Components/assets/1.jpg',
-        '/src/Components/assets/pyimageeditor.png',
-        '/src/Components/assets/5(2).jpg',
-        '/src/Components/assets/3.png',
-        '/src/Components/assets/4.jpg',
-        '/src/Components/assets/5.jpg',
+        '/LeyderImg/1.jpg',
+        '/LeyderImg/pyimageeditor.png',
+        '/LeyderImg/5(2).jpg',
+        '/LeyderImg/3.png',
+        '/LeyderImg/4.jpg',
+        '/LeyderImg/5.jpg',
       ]
     }
+  },
+  components: {
+    NextPrevComponent,
   }
 };
 
@@ -32,13 +36,15 @@ export default {
       </p>
 
 
-      <el-carousel :interval="3000" type="card" height="300px">
+      <el-carousel :interval="5000" type="card" height="300px">
         <el-carousel-item v-for="(image, index) in images" :key="index">
           <img :src="image" alt="Imagen del carrusel" class="carousel-image">
         </el-carousel-item>
       </el-carousel>
     </div>
+    <NextPrevComponent />
   </div>
+  
 </template>
 
 
@@ -100,6 +106,7 @@ export default {
 .content {
   color: rgb(127, 90, 212);
   /* Cambia el color según tus necesidades */
+  margin-bottom: 100px;
   font-size: 2em;
   text-align: center;
   position: relative;

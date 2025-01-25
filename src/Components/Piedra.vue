@@ -26,6 +26,7 @@
         <div class="code">// ¡Gracias Eduardo! 🚀</div>
       </div>
     </transition>
+    <NextPrevComponent />
 
     <div
       class="confetti"
@@ -41,6 +42,7 @@
 
 <script setup>
   import { ref, computed, onMounted } from "vue";
+  import NextPrevComponent from './NextPrevComponent.vue';
 
   const messages = ref([
     'console.log("Gracias por ser nuestro MVP 🏆");',

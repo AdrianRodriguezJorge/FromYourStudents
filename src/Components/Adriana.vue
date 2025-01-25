@@ -1,17 +1,23 @@
 <template>
-  <div class="container">
-    <h1>{{ title }}</h1>
-    <p class="message">{{ message }}</p>
-    <button @click="Mensajitos">Otrooo!!</button>
+
+  <div class="background">
+    <div class="container">
+      <h1>{{ title }}</h1>
+      <p class="message">{{ message }}</p>
+      <button @click="Mensajitos">Otrooo!!</button>
+    </div>
+
+    <NextPrevComponent />
   </div>
 </template>
 
 <script>
+import NextPrevComponent from './NextPrevComponent.vue';
 export default {
   data() {
     return {
       title: 'Gracias',
-      message: 'Por todos los pinky mensajes de aliento en cada una de las entregas.'
+      message: 'Por todos los pinky mensajes de aliento en cada una de las entregas.',
     };
   },
   methods: {
@@ -23,16 +29,20 @@ export default {
       ];
       this.message = messages[Math.floor(Math.random() * messages.length)];
     }
+  },
+  components: {
+    NextPrevComponent,
   }
 };
 </script>
 
 <style scoped>
-body {
+.background {
   margin: 0;
   font-family: 'Arial', sans-serif;
   background: linear-gradient(to right, #6a11cb, #2575fc);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -45,6 +55,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
   max-width: 600px;
+  margin-bottom: 200px;
 }
 
 h1 {

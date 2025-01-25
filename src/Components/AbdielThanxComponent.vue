@@ -1,5 +1,6 @@
 <script setup lang='ts'>
 import { ref, onMounted } from 'vue';
+import NextPrevComponent from './NextPrevComponent.vue';
 
 interface BallStyle {
   top: string;
@@ -83,40 +84,53 @@ onMounted(() => {
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="/src/Components/AbdielImg/Portfolio.png" class="d-block w-100" alt="...">
+            <img src="/AbdielImg/Portfolio.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Portfolio</h5>
               <p>Un proyecto que me servirá para toda la vida</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="/src/Components/AbdielImg/Cero-cruz.png" class="ttt d-block w-100" alt="...">
+            <img src="/AbdielImg/Cero-cruz.png" class="ttt d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block ">
               <h5>TIC-TAC-TOE</h5>
               <p>Mi primer juego creado</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="/src/Components/AbdielImg/Tetradig.png" class="d-block w-100" alt="...">
+            <img src="/AbdielImg/Tetradig.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>TETRADIG WEB</h5>
               <p>Un proyecto completo que me abre muchas puertas</p>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" @click="$router.push('/adriana')">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" @click="$router.push('/adriana')">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
 
 
   </div>
+
+  <NextPrevComponent />
+
 </template>
 
 
@@ -222,7 +236,8 @@ onMounted(() => {
     padding: 15px;
     width: 90%;
   }
-  .container-thanx .text-car{
+
+  .container-thanx .text-car {
     margin-top: 23px;
     text-align: center;
   }
@@ -234,6 +249,4 @@ onMounted(() => {
   }
 
 }
-
-
 </style>

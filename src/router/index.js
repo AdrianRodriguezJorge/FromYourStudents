@@ -7,7 +7,7 @@ import Welcome from '../Components/Welcome.vue';
 import MyThanks from '../Components/MyThanks.vue';
 
 const routes = [
-  { path: '/', component: AbdielThanxComponent },
+  { path: '/', component: Welcome },
   { path: '/abdiel', component: AbdielThanxComponent },
   { path: '/adriana', component: Adriana },
   { path: '/leyder', component: LeyderComponent },

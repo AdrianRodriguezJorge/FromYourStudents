@@ -2,11 +2,14 @@
   <div class="thanks-container">
     <h1>Gracias EduardoProfe</h1>
     <p>Gracias por tu dedicación y esfuerzo en enseñarnos. Tu pasión por la enseñanza ha dejado una huella imborrable en nosotros.</p>
-    <router-link to="/abdiel">
-      <button>Ver dedicatorias</button>
-    </router-link>
+    <NextPrevComponent />
   </div>
 </template>
+
+<script setup>
+import NextPrevComponent from './NextPrevComponent.vue';
+
+</script>
 
 <style scoped>
   .thanks-container {
@@ -16,8 +19,12 @@
     justify-content: center;
     height: 100vh;
     text-align: center;
-    background: linear-gradient(to right, #ff4081, #ff4081);
+    background: linear-gradient(to right,rgb(245, 107, 153), #f84883);
     color: white;
+  }
+
+  p{
+    margin-bottom: 200px;
   }
 
   button {
