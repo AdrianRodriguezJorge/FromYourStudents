@@ -26,7 +26,7 @@ const animateBall = () => {
     };
   };
   moveBall();
-  setInterval(moveBall, 2000);
+  setInterval(moveBall, 1000);
 };
 
 onMounted(() => {
@@ -57,12 +57,12 @@ onMounted(() => {
           conseguir trabajo en esto que me apasiona, que es la programacion web. Solo le quiero pedir que nunca cambie
           su
           manera de enseñar, de ser excelente, de pedirnos más y hacernos crecer. Tal vez pase el
-          tiempo y no nos recuerde ya que somos tantos jajaj, y seguro tendrá muchos más estudiantes, pero si quiero que
-          recuerde que al menos uno de sus estudiantes siempre lo recordará, como modelo a seguir y con mucho
-          agradecimiento.
+          tiempo y no nos recuerde ya que somos tantos jajaj, pero si quiero que
+          sepa que al menos uno de sus alumnos siempre lo tendrá presente, como modelo a seguir y con mucha
+          gratitud.
         </p>
 
-        <div class="desp">
+        <div class="desp">  
           <p> Con un corazón agradecido,</p>
         </div>
         <div class="desp2">
@@ -247,5 +247,18 @@ onMounted(() => {
     color: #fff
   }
 
+
+
+}
+
+@media (max-width: 769px){
+  .container-thanx .carousel .carousel-inner img {
+  filter: none;
+}
+
+.ball {
+  width: 500px;
+  height: 600px;
+}
 }
 </style>

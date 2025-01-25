@@ -32,6 +32,7 @@ export default {
   color: white;
   background-image: url('/LP.jpg'); /* Reemplaza con la URL de tu imagen */
   background-size: cover; 
+  background-position: center;
   position: relative; /* Necesario para el pseudoelemento */
 }
 

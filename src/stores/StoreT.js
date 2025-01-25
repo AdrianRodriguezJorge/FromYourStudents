@@ -19,13 +19,17 @@ export const useCurrentThanxStore = defineStore('StoreT', {
     nextView(){
       this.current++;
       localStorage.setItem('current', this.current);
-      console.log(this.current)
-      router.push(`/${this.components[this.current]}`)
+      router.push(`/${this.components[this.current]}`);
     },
     previousView(){
       this.current--;
       localStorage.setItem('current', this.current);
-      router.push(`/${this.components[this.current]}`)
+      router.push(`/${this.components[this.current]}`);
     },
+    homeView(){
+      this.current = 0;
+      localStorage.setItem('current', this.current);
+      router.push('/')
+    }
   },
 });

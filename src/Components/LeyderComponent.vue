@@ -66,12 +66,10 @@ export default {
 }
 
 .background-container {
-  /* position: relative; */
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  /* overflow: hidden; */
   z-index: 2;
 }
 
@@ -107,7 +105,7 @@ export default {
 .content {
   color: rgb(127, 90, 212);
   /* Cambia el color según tus necesidades */
-  margin-bottom: 100px;
+  margin: 0 7px 100px 7px;
   font-size: 2em;
   text-align: center;
   /* position: relative; */

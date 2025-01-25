@@ -14,14 +14,23 @@ const goNext = () => {
 const goBack = () => {
     state.previousView();
 }
+
+const goHome = () => {
+    state.homeView();
+}
 </script>
 
 <template>
     <footer>
-        <div class="prev" @click="goBack()" :class="{
-            'none': current < 1,
+        <div class="prev" @click="goBack()" v-if="current > 0">
+            <p >Anterior</p>
+        </div>
+
+        <div class="home" @click="goHome()" :class="{
+            'margin': current < 1,
+            'margin-r': current === size,
         }">
-            <p v-if="current > 0">Anterior</p>
+            <p>Inicio</p>
         </div>
 
 
@@ -76,12 +85,58 @@ footer .next {
     align-items: center;
     margin-right: 100px;
     margin-bottom: 50px;
-    margin-left: 5px;
+}
+
+footer .home{
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 12px 24px 0 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+footer .home.margin{
+    margin-left: 100px;
+}
+
+footer .home.margin-r{
+    margin-right: 100px;
 }
 
 footer .next:hover,
 footer .prev:hover {
     background-color: #e91e63;
     transform: translateY(-2px);
+}
+
+@media (max-width: 750px) {
+    footer .next{
+        margin-right: 7px;
+        font-size: 1rem;
+    }
+
+    footer .prev{
+        margin-left: 7px;
+        font-size: 1rem;
+    }
+
+    footer .home.margin{
+        margin-left: 7px;
+        font-size: 1rem;
+    }
+    footer .home{
+        font-size: 1rem;
+    }
+    
+    footer .home.margin-r{
+    margin-right: 7px;
+    font-size: 1rem;
+}
 }
 </style>
