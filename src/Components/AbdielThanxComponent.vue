@@ -59,8 +59,7 @@ onMounted(() => {
           manera de enseñar, de ser excelente, de pedirnos más y hacernos crecer. Tal vez pase el
           tiempo y no nos recuerde ya que somos tantos jajaj, y seguro tendrá muchos más estudiantes, pero si quiero que
           recuerde que al menos uno de sus estudiantes siempre lo recordará, como modelo a seguir y con mucho
-          agradecimiento en mi
-          corazón.
+          agradecimiento.
         </p>
 
         <div class="desp">
