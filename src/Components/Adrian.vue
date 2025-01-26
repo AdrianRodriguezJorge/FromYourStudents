@@ -44,7 +44,7 @@ import NextPrevComponent from './NextPrevComponent.vue';
   padding: 20px;
   min-height: 100vh;
   text-align: center;
-  background: linear-gradient(-45deg,#3c609b, #3c9b44, #9f873a, #9f2a2a);
+  background: linear-gradient(-45deg, #3c609b, #3c9b44, #9f873a, #9f2a2a);
   background-size: 400% 400%;
   animation: gradientBG 8s ease infinite;
   color: #fff;
@@ -146,18 +146,18 @@ import NextPrevComponent from './NextPrevComponent.vue';
 }
 
 .page-credits {
-    position: fixed;
-    bottom: 15px;
-    right: 20px;
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.7);
-    font-family: Arial, sans-serif;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-    z-index: 1;
-  }
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Arial, sans-serif;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
 
-  .page-credits:hover {
-    opacity: 1;
-  }
+.page-credits:hover {
+  opacity: 1;
+}
 </style>
