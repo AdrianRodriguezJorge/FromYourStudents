@@ -129,7 +129,9 @@ onMounted(() => {
   </div>
 
   <NextPrevComponent />
-
+  <div class="page-credits">
+    Abdiel Rodríguez
+  </div>
 </template>
 
 
@@ -261,4 +263,20 @@ onMounted(() => {
   height: 600px;
 }
 }
+
+.page-credits {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Arial, sans-serif;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+  }
+
+  .page-credits:hover {
+    opacity: 1;
+  }
 </style>

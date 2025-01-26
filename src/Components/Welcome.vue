@@ -3,16 +3,9 @@
     <h1>Bienvenido Profe ;)</h1>
     <div class="text">
       <p>Esto es para ti EduardoProfe como agradecimiento por el tiempo dedicado, esperamos te guste.</p>
-      <div>
-        <ul>
-          <li>Abdiel</li>
-          <li>Adriana</li>
-          <li>Leyder</li>
-          <li>Piedra</li>
-          <li>Adrián</li>
-        </ul>
-    </div>
-      <p><strong>En representación de los Estudiantes del grupo 31, Ingeniería Informática, CUJAE</strong></p>
+     <br>
+      <p><strong>En representación de los estudiantes del grupo 31, Ingeniería Informática, CUJAE</strong></p>
+     <br>
       <h3>Sinceramente gracias por todo... ❤️</h3>
     </div>
     <router-link to="/abdiel">

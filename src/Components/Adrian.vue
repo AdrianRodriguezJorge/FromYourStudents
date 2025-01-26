@@ -24,6 +24,9 @@
     </div>
     <NextPrevComponent />
   </div>
+  <div class="page-credits">
+    Adrián Rodríguez
+  </div>
 </template>
 
 <script setup>
@@ -141,4 +144,20 @@ import NextPrevComponent from './NextPrevComponent.vue';
     font-size: 1.5rem;
   }
 }
+
+.page-credits {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Arial, sans-serif;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+  }
+
+  .page-credits:hover {
+    opacity: 1;
+  }
 </style>

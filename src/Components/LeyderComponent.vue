@@ -44,7 +44,10 @@ export default {
     </div>
   </div>
   <NextPrevComponent />
-  
+
+  <div class="page-credits">
+    Leyder I. Herrera
+  </div>
   
 </template>
 
@@ -113,4 +116,19 @@ export default {
   /* z-index: 2; */
   /* Asegura que el contenido esté por encima de la imagen de fondo */
 }
+ .page-credits {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Arial, sans-serif;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+  }
+
+  .page-credits:hover {
+    opacity: 1;
+  }
 </style>
