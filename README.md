@@ -1,7 +1,7 @@
 # From Your Students
 
 ## Descripción
-Este proyecto es una aplicación desarrollada con Vue 3 que demuestra varios conceptos fundamentales y avanzados de Vue, como la reactividad, el ciclo de vida de los componentes, la gestión de estado con Pinia, y más.
+Este proyecto es una aplicación desarrollada con Vue 3 que demuestra varios conceptos fundamentales y avanzados de Vue, como la reactividad, el ciclo de vida de los componentes, la gestión de estado con Pinia, y más. La aplicación utiliza `vue-router` para manejar la navegación, lo que la convierte en una Single Page Application (SPA).
 
 ## Tabla de Contenidos
 - [Fundamentos](#fundamentos)
@@ -35,6 +35,7 @@ Este proyecto es una aplicación desarrollada con Vue 3 que demuestra varios con
 - Vite
 - Pinia
 - Composition API
+- Vue Router
 
 ## Instalación
 Para instalar y ejecutar el proyecto localmente, sigue estos pasos:
