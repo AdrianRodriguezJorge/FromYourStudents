@@ -54,8 +54,8 @@ footer {
 }
 
 footer .prev {
-    background-color: #ff4081;
-    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
     border: none;
     padding: 12px 24px 0 24px;
     border-radius: 5px;
@@ -73,8 +73,8 @@ footer .prev.none {
 }
 
 footer .next {
-    background-color: #ff4081;
-    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
     border: none;
     padding: 12px 24px 0 24px;
     border-radius: 5px;
@@ -88,11 +88,11 @@ footer .next {
 }
 
 footer .home{
-    background-color: #ff4081;
-    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
     border: none;
     padding: 12px 24px 0 24px;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
     font-size: 1.5rem;
     transition: background-color 0.3s, transform 0.2s;
@@ -110,8 +110,9 @@ footer .home.margin-r{
 }
 
 footer .next:hover,
-footer .prev:hover {
-    background-color: #e91e63;
+footer .prev:hover,
+footer .home:hover {
+    background-color:rgb(255, 255, 255);
     transform: translateY(-2px);
 }
 

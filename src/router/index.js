@@ -1,10 +1,10 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import AbdielThanxComponent from '../Components/AbdielThanxComponent.vue';
 import Adriana from '../Components/Adriana.vue';
 import LeyderComponent from '../Components/LeyderComponent.vue';
 import Piedra from '../Components/Piedra.vue';
 import Welcome from '../Components/Welcome.vue';
-import MyThanks from '../Components/MyThanks.vue';
+import Adrian from '../Components/Adrian.vue';
 
 const routes = [
   { path: '/', component: Welcome },
@@ -12,11 +12,11 @@ const routes = [
   { path: '/adriana', component: Adriana },
   { path: '/leyder', component: LeyderComponent },
   { path: '/piedra', component: Piedra },
-  { path: '/my-thanks', component: MyThanks },
+  { path: '/adrian', component: Adrian },
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(), // Cambiamos a createWebHashHistory
   routes,
 });
 

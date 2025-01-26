@@ -1,9 +1,5 @@
 <template>
-
-  <div class="background">
-  </div>
-
-
+  <div class="background"></div>
   <div class="mes-con">
     <div class="container-a">
       <h1>{{ title }}</h1>
@@ -11,29 +7,32 @@
       <button @click="Mensajitos">Otrooo!!</button>
     </div>
   </div>
-
-    <NextPrevComponent />
-  
-  
+  <NextPrevComponent />
 </template>
 
 <script>
 import NextPrevComponent from './NextPrevComponent.vue';
+
 export default {
   data() {
     return {
       title: 'Gracias',
       message: 'Por todos los pinky mensajes de aliento en cada una de las entregas.',
-    };
-  },
-  methods: {
-    Mensajitos() {
-      const messages = [
+      messageIndex: 0,
+      messages: [
         'Por todo el tiempo dedicado.',
         'Por todas las charlas motivacionales.',
         'Y por apreciar mi esfuerzo dibujando el camello en Paint.'
-      ];
-      this.message = messages[Math.floor(Math.random() * messages.length)];
+      ],
+    };
+  },
+  mounted() {
+    this.Mensajitos(); // Inicializa el primer mensaje
+  },
+  methods: {
+    Mensajitos() {
+      this.message = this.messages[this.messageIndex];
+      this.messageIndex = (this.messageIndex + 1) % this.messages.length;
     }
   },
   components: {
@@ -43,6 +42,8 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 .background {
   font-family: 'Arial', sans-serif;
   background: linear-gradient(to right, #6a11cb, #2575fc);
@@ -53,13 +54,14 @@ export default {
   margin: 0;
 }
 
-.mes-con{
+.mes-con {
   width: 100%;
   height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .container-a {
   text-align: center;
   background: rgb(243, 243, 243);
@@ -68,7 +70,7 @@ export default {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
   max-width: 600px;
   margin-bottom: 200px;
-
+  margin-top: 150px;
   z-index: 2;
 }
 
@@ -102,8 +104,8 @@ button:hover {
   transform: translateY(-2px);
 }
 
-@media (max-width:610px) {
-  .container-a{
+@media (max-width: 610px) {
+  .container-a {
     width: 90%;
   }
 }
