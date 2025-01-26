@@ -6,8 +6,8 @@
       <div>
         <ul>
           <li>Abdiel</li>
-          <li>Leyder</li>
           <li>Adriana</li>
+          <li>Leyder</li>
           <li>Piedra</li>
           <li>Adrián</li>
         </ul>
@@ -96,8 +96,8 @@ button {
   background-color: rgba(255, 255, 255, 0.8);
   color: #333;
   border: none;
-  padding: 12px 36px;
-  border-radius: 50px;
+  padding: 14px 20px 18px 20px;
+  border-radius: 20px;
   cursor: pointer;
   font-size: 1.5rem;
   transition: background-color 0.3s, transform 0.2s;
@@ -125,7 +125,7 @@ button:active {
 
   button {
     font-size: 1.2rem;
-    padding: 10px 28px;
+    padding: 13px 20px 16px 20px;
   }
 }
 
@@ -141,7 +141,7 @@ button:active {
 
   button {
     font-size: 1rem;
-    padding: 8px 24px;
+    padding: 13px 20px 16px 20px;
   }
 }
 </style>

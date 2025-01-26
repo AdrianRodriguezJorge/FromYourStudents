@@ -9,7 +9,7 @@ export const useCurrentThanxStore = defineStore('StoreT', {
       'adriana',
       'leyder',
       'piedra',
-      'my-thanks',
+      'adrian',
     ],
     current: JSON.parse(localStorage.getItem('current')) ,
     size: 4,

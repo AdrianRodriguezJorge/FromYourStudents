@@ -54,11 +54,11 @@ footer {
 }
 
 footer .prev {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.8);
     color: black;
     border: none;
     padding: 12px 24px 0 24px;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     font-size: 1.5rem;
     transition: background-color 0.3s, transform 0.2s;
@@ -73,11 +73,11 @@ footer .prev.none {
 }
 
 footer .next {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.8);
     color: black;
     border: none;
     padding: 12px 24px 0 24px;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     font-size: 1.5rem;
     transition: background-color 0.3s, transform 0.2s;
@@ -88,11 +88,11 @@ footer .next {
 }
 
 footer .home{
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.8);
     color: black;
     border: none;
     padding: 12px 24px 0 24px;
-    border-radius: 50px;
+    border-radius: 20px;
     cursor: pointer;
     font-size: 1.5rem;
     transition: background-color 0.3s, transform 0.2s;

@@ -17,10 +17,10 @@
       <p>Espero podamos seguir teniendo el placer de contar contigo para cualquier cosa, desde una duda técnica hasta una existencial. También deseo que nos tengas presentes cuando necesites cualquier cosa y recuerdes nuestro eterno agradecimiento.</p>
     </div>
     <div class="card fade-in delay-5">
-      <p><strong>PD:</strong> ¿Cuándo vas a enseñarle al resto de los profesores a utilizar un bot de Telegram para hacer entregas, publicar notas y notificar al correo de estas? 🤣🤣</p>
+      <p><strong>PD:</strong> ¿Cuándo vas a enseñarle al resto de los profesores a utilizar un bot de Telegram para hacer entregas, publicar notas y notificarlas al correo eh? 🤣🤣</p>
     </div>
     <div class="card fade-in delay-6">
-      <p><strong>PD2:</strong> <strong class="last">Gracias.</strong></p>
+      <p><strong class="last">Gracias</strong></p>
     </div>
     <NextPrevComponent />
   </div>
@@ -41,9 +41,9 @@ import NextPrevComponent from './NextPrevComponent.vue';
   padding: 20px;
   min-height: 100vh;
   text-align: center;
-  background: linear-gradient(-45deg, #2d7c43, #2d4f85, #8e772a, #722424);
+  background: linear-gradient(-45deg,#3c609b, #3c9b44, #9f873a, #9f2a2a);
   background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
+  animation: gradientBG 8s ease infinite;
   color: #fff;
   box-sizing: border-box;
 }
@@ -78,11 +78,12 @@ import NextPrevComponent from './NextPrevComponent.vue';
 .card {
   background: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
-  padding: 20px;
+  padding: 15px 15px 5px 15px;
   margin: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  max-width: 600px;
+  max-width: 700px;
   opacity: 0;
+  color: white;
 }
 
 .fade-in {
