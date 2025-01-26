@@ -1,13 +1,12 @@
 {
-  "name": "vite-vue-starter",
-  "private": true,
-  "version": "0.0.0",
+  "name": "fromyourstudents",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "serve": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "serve": "vite",
     "deploy": "vite build && gh-pages -d dist"
   },
   "dependencies": {
