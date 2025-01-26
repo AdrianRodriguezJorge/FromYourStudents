@@ -1,17 +1,29 @@
 <template>
-  <div class="container">
-    <h1>{{ title }}</h1>
-    <p class="message">{{ message }}</p>
-    <button @click="Mensajitos">Otrooo!!</button>
+
+  <div class="background">
   </div>
+
+
+  <div class="mes-con">
+    <div class="container-a">
+      <h1>{{ title }}</h1>
+      <p class="message">{{ message }}</p>
+      <button @click="Mensajitos">Otrooo!!</button>
+    </div>
+  </div>
+
+    <NextPrevComponent />
+  
+  
 </template>
 
 <script>
+import NextPrevComponent from './NextPrevComponent.vue';
 export default {
   data() {
     return {
       title: 'Gracias',
-      message: 'Por todos los pinky mensajes de aliento en cada una de las entregas.'
+      message: 'Por todos los pinky mensajes de aliento en cada una de las entregas.',
     };
   },
   methods: {
@@ -23,28 +35,41 @@ export default {
       ];
       this.message = messages[Math.floor(Math.random() * messages.length)];
     }
+  },
+  components: {
+    NextPrevComponent,
   }
 };
 </script>
 
 <style scoped>
-body {
-  margin: 0;
+.background {
   font-family: 'Arial', sans-serif;
   background: linear-gradient(to right, #6a11cb, #2575fc);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  margin: 0;
 }
 
-.container {
+.mes-con{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-a {
   text-align: center;
   background: rgb(243, 243, 243);
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
   max-width: 600px;
+  margin-bottom: 200px;
+
+  z-index: 2;
 }
 
 h1 {
@@ -75,5 +100,11 @@ button {
 button:hover {
   background-color: #e91e63;
   transform: translateY(-2px);
+}
+
+@media (max-width:610px) {
+  .container-a{
+    width: 90%;
+  }
 }
 </style>

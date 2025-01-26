@@ -26,6 +26,7 @@
         <div class="code">// ¡Gracias Eduardo! 🚀</div>
       </div>
     </transition>
+    <NextPrevComponent />
 
     <div
       class="confetti"
@@ -41,6 +42,7 @@
 
 <script setup>
   import { ref, computed, onMounted } from "vue";
+  import NextPrevComponent from './NextPrevComponent.vue';
 
   const messages = ref([
     'console.log("Gracias por ser nuestro MVP 🏆");',
@@ -257,7 +259,7 @@
   /* Burbuja de diálogo mejorada */
   .speech-bubble {
     position: absolute;
-    top: 100px;
+    top: 3%;
     background: #2c3e50;
     color: #fff;
     padding: 1.5rem;
